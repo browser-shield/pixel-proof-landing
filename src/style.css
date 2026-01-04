@@ -566,12 +566,22 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-page);
   color: var(--text-primary);
   line-height: 1.6;
-  overflow-x: hidden;
+  position: relative;
 }
 
 /* Display font for headings */
@@ -1235,6 +1245,9 @@ h1, h2, h3, .logo {
 .hero {
   padding: 160px 0 120px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  overflow-x: clip;
 }
 
 .hero-badge {
