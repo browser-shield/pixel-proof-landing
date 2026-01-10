@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Pixel Proof</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-page: #FAF8F5;
+      --bg-surface: #FFFFFF;
+      --text-primary: #262220;
+      --accent: #B85C38;
+      --accent-light: #E8D4C4;
+      --border-color: #262220;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      padding: 20px 0;
+      border-bottom: 2px solid var(--border-color);
+      background: var(--bg-page);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--accent), #C97B5D);
+      border: 2px solid var(--border-color);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .back-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 60px 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .last-updated {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 0.95rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #444;
+    }
+
+    ul {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .highlight-box {
+      background: var(--accent-light);
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    footer {
+      padding: 40px 0;
+      border-top: 2px solid var(--border-color);
+      text-align: center;
+    }
+
+    footer p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <a href="/" class="logo">
+        <div class="logo-icon">PP</div>
+        Pixel Proof
+      </a>
+      <a href="/" class="back-link">Back to Home</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: <script>document.write(new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }))</script></p>
+
+      <div class="highlight-box">
+        <p>Pixel Proof is designed with privacy as a core principle. All image analysis happens locally on your device. We do not collect, store, or transmit your images to any server.</p>
+      </div>
+
+      <h2>Data Collection</h2>
+      <p>Pixel Proof does not collect any personal data. The extension operates entirely within your browser:</p>
+      <ul>
+        <li>Images are analyzed locally using Web Workers</li>
+        <li>No images are uploaded to external servers</li>
+        <li>No account or registration is required</li>
+        <li>No analytics or tracking scripts are used</li>
+      </ul>
+
+      <h2>Local Storage</h2>
+      <p>The extension stores analysis history locally on your device using IndexedDB. This data:</p>
+      <ul>
+        <li>Never leaves your browser</li>
+        <li>Can be cleared at any time through the extension settings</li>
+        <li>Is not accessible to any external service</li>
+      </ul>
+
+      <h2>External Services</h2>
+      <p>When you use the reverse image search feature, you may be redirected to third-party search engines (Google, Bing, TinEye, Yandex). These services have their own privacy policies that apply when you use them.</p>
+
+      <h2>Permissions</h2>
+      <p>The extension requests only the minimum permissions necessary:</p>
+      <ul>
+        <li><strong>activeTab:</strong> To analyze images on the current page</li>
+        <li><strong>contextMenus:</strong> To add right-click analysis option</li>
+        <li><strong>storage:</strong> To save your preferences and analysis history locally</li>
+      </ul>
+
+      <h2>Updates</h2>
+      <p>This privacy policy may be updated occasionally. Any changes will be reflected on this page with an updated date.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Pixel Proof - Open source image authenticity verification</p>
+    </div>
+  </footer>
+</body>
+</html>
